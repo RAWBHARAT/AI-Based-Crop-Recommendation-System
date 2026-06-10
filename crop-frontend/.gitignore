@@ -24,3 +24,12 @@ dist-ssr
 *.sw?
 .env
 *.env
+node_modules/
+crop-backend/node_modules/
+crop-frontend/node_modules/
+
+.env
+*.env
+
+.venv/
+__pycache__/
