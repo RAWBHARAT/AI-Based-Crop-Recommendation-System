@@ -24,7 +24,7 @@ function SoilReport() {
   // ✅ SAVE SOIL + AUTO FLOW
   const saveSoil = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/soil", {
+      const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/soil", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -56,7 +56,7 @@ function SoilReport() {
   // ✅ FETCH PREVIOUS DATA
   const fetchSoil = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/soil", {
+      const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/soil", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

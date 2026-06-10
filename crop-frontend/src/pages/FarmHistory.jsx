@@ -6,7 +6,7 @@ function FarmHistory() {
 
   useEffect(() => {
     const fetchHistory = async () => {
-      const res = await fetch("http://localhost:5000/api/farm-history");
+      const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/farm-history");
       const data = await res.json();
       setHistory(data.history);
     };

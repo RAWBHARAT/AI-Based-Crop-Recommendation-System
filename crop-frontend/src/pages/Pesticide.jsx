@@ -30,7 +30,7 @@ function Pesticide() {
           return;
         }
 
-        const res = await fetch("http://localhost:5000/api/pesticide", {
+        const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/pesticide", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

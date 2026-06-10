@@ -50,7 +50,7 @@ function Weather() {
       }
 
       const res = await fetch(
-        `http://localhost:5000/api/weather?location=${encodeURIComponent(location)}`
+        `https://ai-based-crop-recommendation-system-avp5.onrender.com/api/weather?location=${encodeURIComponent(location)}`
       );
 
       const data = await res.json();

@@ -25,7 +25,7 @@ function Dashboard() {
     setMessages((prev) => [...prev, userMsg]);
 
     try {
-      const res = await fetch("http://localhost:5000/api/chat", {
+      const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

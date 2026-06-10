@@ -17,7 +17,7 @@ function Mandi() {
         if (!location) return;
 
         const res = await fetch(
-          `http://localhost:5000/api/mandi?location=${encodeURIComponent(location)}`
+          `https://ai-based-crop-recommendation-system-avp5.onrender.com/api/mandi?location=${encodeURIComponent(location)}`
         );
 
         const data = await res.json();

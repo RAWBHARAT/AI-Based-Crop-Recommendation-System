@@ -51,7 +51,7 @@ function Recommendation() {
 
         // 🔥 SAVE HISTORY (from cache)
         try {
-          const res = await fetch("http://localhost:5000/api/farm-history", {
+          const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/farm-history", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -110,7 +110,7 @@ function Recommendation() {
           );
 
           // 🔥 SAVE HISTORY (ML result)
-          const saveRes = await fetch("http://localhost:5000/api/farm-history", {
+          const saveRes = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/farm-history", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

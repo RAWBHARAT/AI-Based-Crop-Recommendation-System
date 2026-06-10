@@ -9,7 +9,7 @@ function Fertilizer() {
   useEffect(() => {
     const fetchSoil = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/soil", {
+        const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/soil", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
           },
@@ -48,7 +48,7 @@ function Fertilizer() {
       if (!soil || !crops) return;
 
       try {
-        const res = await fetch("http://localhost:5000/api/fertilizer", {
+        const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/fertilizer", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

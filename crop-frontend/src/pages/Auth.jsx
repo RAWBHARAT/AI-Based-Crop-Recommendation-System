@@ -79,7 +79,7 @@ function Auth() {
     e.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:5000/api/login", {
+      const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -124,7 +124,7 @@ function Auth() {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/api/register", {
+      const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

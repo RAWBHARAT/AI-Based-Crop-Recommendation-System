@@ -5,7 +5,7 @@ function Profile() {
 
   useEffect(() => {
     const fetchProfile = async () => {
-      const res = await fetch("http://localhost:5000/api/profile", {
+      const res = await fetch("https://ai-based-crop-recommendation-system-avp5.onrender.com/api/profile", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
